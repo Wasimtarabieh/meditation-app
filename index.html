@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by wasim tarabieh</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لحظات اليقظة</title>
+    <!-- استخدام خطوط Google بشكل آمن مع HTTPS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- تحميل Font Awesome بشكل آمن -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- أضفت وسم <section> لتحسين الهيكل الدلالي -->
+        <section id="news-ticker">
+            <p id="news-message">أهمية التأمل اليومي: <span id="news-content"></span></p>
+        </section>
+        <h1>جلسة تأمل</h1>
+        <section id="daily-message">
+            <button id="showDailyMessageBtn">عرض الرسالة اليومية</button>
+            <p id="message"></p>
+        </section>
+        <section id="meditation-timer">
+            <h2>مؤقت التأمل</h2>
+            <div id="timer">00:00</div>
+            <input type="number" id="time" placeholder="أدخل الوقت بالدقائق" min="1" aria-label="وقت التأمل بالدقائق">
+            <button id="startTimerBtn">بدء التأمل</button>
+            <button id="stopTimerBtn" style="display:none;">إيقاف التأمل</button>
+        </section>
+        <section id="meditation-summary" style="display:none;">
+            <p id="meditation-time"></p>
+            <p id="meditation-quote"></p>
+            <button id="shareWhatsapp" onclick="shareOnWhatsapp()">مشاركة على واتساب</button>
+        </section>
+    </div>
+    <audio id="meditationMusic" src="https://assets.codepen.io/12011409/Meditation+music.mp3" loop></audio>
+    <script src="Meditation.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+body, html {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #74EBD5 0%, #9FACE6 100%);
+    color: #333;
+    transition: background-color 2s ease;
+}
+
+#app {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly increased opacity for better readability */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15); /* Slightly darker shadow for better depth perception */
+    backdrop-filter: blur(10px);
+}
+
+#timer {
+    font-size: 3em;
+    font-weight: bold;
+    color: #74EBD5;
+    margin: 20px 0;
+    transition: color 0.5s ease;
+    /* Added text-shadow for better readability on varying backgrounds */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+input[type="number"], button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: all 0.3s ease;
+    /* Improve accessibility by increasing contrast on focus */
+    outline: none;
+}
+
+button:hover, button:focus {
+    background-color: #74EBD5;
+    color: #fff;
+    /* Added box-shadow to highlight focus and hover states */
+    box-shadow: 0 0 8px rgba(0,255,255,0.5);
+}
+
+#news-ticker, #meditation-summary {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-weight: bold;
+    background-color: #f0e68c;
+    /* Improved contrast ratio for accessibility */
+    color: #333;
+}
+
+#meditation-summary p, #shareWhatsapp {
+    margin: 10px 0;
+    font-size: 18px;
+    /* Enhanced line height for better readability */
+    line-height: 1.6;
+}
